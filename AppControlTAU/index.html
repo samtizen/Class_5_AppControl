@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+	
+    <title>Tizen Mobile Web Basic Application</title>
+	<link rel="stylesheet"  href="lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+<body>
+    <div class="ui-page ui-page-active" id="page-indicator-page">
+        <div class="ui-header" data-position="fixed">
+            <h1 id="page-header-title"></h1>
+        </div>
+        <div class="ui-content">
+            <div class="ui-page-indicator" id="pageIndicator" data-number-of-pages="4" style="transform: translate3d(-50%, -100%, 0); bottom: 0; z-index: 101;"></div>
+            <div id="hsectionchanger" class="ui-section-changer">
+                <!-- section changer has only one child. -->
+                <div>
+                    <section id="app-info" class="ui-section-active">
+                    	<button id="btn-show-app-info">Get App Info</button>
+                    	<div class="hsinfo" id="appInfo"></div>
+                    	<button id="btn-show-app-context">Get App Context</button>
+                    	<div class="hsinfo" id="appContextInfo"></div>
+                    </section>
+                    <section>
+                    	<button id="btn-show-imp-app">Launch App</button>
+                    </section>
+                    <section>
+                    	<button id="btn-show-app2-info">App 2 Info</button>
+                    	<div class="hsinfo" id="app2Info"></div>
+                    	<button id="btn-show-app2-context">Get App 2 Context</button>
+                    	<div class="hsinfo" id="app2ContextInfo"></div>
+                        <button id="btn-show-expl-app">Launch App</button>
+                    </section>
+                    <section>
+                        <button id="btn-show-data-exchange">Data Exchange</button>
+                        <label>Reply (data from app 2)</label>
+                        <input id="txt-data-from-app-2" type="text"/>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 
+	<div class="ui-page" id="one">
+
+		<div class="ui-header">
+			<h1>Application 1</h1>
+		</div>
+
+		<div class="ui-content">
+			<button onclick="launchImplApp();">Launch App 2</button>
+			
+			<button onclick="shAppInfo();">App1 Info</button>
+			<div class="hsinfo" id="appInfo"></div>
+			
+			<button onclick="shAppContextInfo();">App1 Context</button>
+			<div class="hsinfo" id="appContextInfo"></div>
+			
+			<button onclick="shApp2Info();">App2 Info</button>
+			<div class="hsinfo" id="app2Info"></div>
+			
+			<button onclick="shApp2ContextInfo();">App2 Context</button>
+			<div class="hsinfo" id="app2ContextInfo"></div>
+			
+			<button onclick="launchExmlApp2();">Launch App2</button>
+			<div id="header_popup" class="ui-popup">
+	            <div class="ui-popup-header">Application Status</div>
+	            <div class="ui-popup-content popup-content-padding" id="appStatus">
+	            </div>
+        	</div>
+        	<button onclick="tau.changePage('#two')">Page Two</button>
+		</div>
+
+	</div>
+	<div class="ui-page" id="two">
+		<a href="#one">Page One</a>
+	</div>-->
+    <script type="text/javascript" src="lib/tau/mobile/js/tau.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script src="js/pageindicator.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/appcontrol.js"></script>
+</body>
+</html>

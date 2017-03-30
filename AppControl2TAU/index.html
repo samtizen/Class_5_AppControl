@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+	
+    <title>Tizen Mobile Web Basic Application</title>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+<body>
+	<div class="ui-page ui-active-page" id="main">
+		<div class="ui-header">
+			<h1>Application 2 - Main</h1>
+		</div>
+		<div class="ui-content">
+			<div>This is the Second App</div>
+		</div>
+	</div>
+	<div class="ui-page" id="another-page">
+		<div class="ui-header">
+			<h1>Application 2 - Another Page</h1>
+		</div>
+
+		<div class="ui-content">
+			<label>Data From App 1</label>
+			<input id="txt-data-from-app-1" type="text"/>
+			<button id="btn-send-msg-back">Send Reply</button>
+		</div>
+	</div>
+	
+    <script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+    <script src="./lib/jquery.js"></script>
+	<script src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/appcontrol.js"></script>
+</body>
+</html>
